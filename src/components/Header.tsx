@@ -3,8 +3,6 @@ import { NavLink } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  // Array de links ATUALIZADO
   const navLinks = [
     { to: '/', label: 'Home' },
     { to: '/consultas', label: 'Consultas' },

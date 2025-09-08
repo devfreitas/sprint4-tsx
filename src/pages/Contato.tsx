@@ -36,7 +36,6 @@ const Contato: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    {/* Mapa Simulado */}
                     <div className="h-64 bg-slate-200 rounded-lg flex items-center justify-center">
                         <p className="text-slate-500 font-semibold"></p><iframe 
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7314.592629757024!2d-46.66986!3d-23.557799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59b00d3aa487%3A0xfe715b43e354f823!2sHospital%20das%20Cl%C3%ADnicas%20FMUSP!5e0!3m2!1spt-BR!2sbr!4v1757284203851!5m2!1spt-BR!2sbr"
@@ -47,8 +46,6 @@ const Contato: React.FC = () => {
             </iframe>
                     </div>
                 </div>
-
-                {/* Coluna da Direita: Formulário */}
                 <div>
                     <h3 className="text-2xl font-bold text-slate-800 mb-4">Envie uma Mensagem</h3>
                     <form onSubmit={handleSubmit} className="space-y-6">

@@ -7,10 +7,10 @@ interface FaqItemData {
 }
 
 const faqs: FaqItemData[] = [
-  { question: 'Como posso agendar uma consulta?', answer: 'Você pode agendar uma consulta diretamente através da nossa página de "Consultas", selecionando a especialidade e o profissional desejado. Você também pode ligar para nossa central de atendimento.' },
-  { question: 'Quais convênios médicos vocês aceitam?', answer: 'Aceitamos uma ampla variedade de convênios. Para confirmar se o seu é aceito, por favor, entre em contato conosco ou visite a seção de convênios em nosso site.' },
+  { question: 'Como posso agendar uma consulta?', answer: 'Você pode agendar uma consulta diretamente através da nossa página de "Consultas", selecionando a especialidade e o profissional desejado.' },
+  { question: 'Quais convênios médicos vocês aceitam?', answer: 'Aceitamos uma ampla variedade de convênios. Para confirmar se o seu é aceito, por favor, entre em contato conosco. Alguns exemplos dos convênios que aceitamos: Allianz Saúde, Amil, Bradesco Saúde, Golden Cross, SulAmérica, entre outros.' },
   { question: 'Preciso de jejum para fazer exames de sangue?', answer: 'Depende do exame. Exames como Glicemia e Colesterol exigem jejum. Outros, como o Hemograma, não. Verifique as instruções específicas na página de "Exames" ou entre em contato.' },
-  { question: 'Qual o horário de funcionamento da clínica?', answer: 'Nossa clínica funciona de segunda a sexta, das 07:00 às 19:00, e aos sábados, das 08:00 às 12:00.' },
+  { question: 'Qual o horário de funcionamento da clínica?', answer: 'Os ambulatórios abrem às 7h e fecham às 18h. As visitas dos pacientes internados nas Enfermarias do ICHC acontecem todos os  dias das 14h às 17h horas, sendo permitida a entrada de 2 pessoas maiores de  18 anos. Seção de Registro da Unida de Emergência Referenciada: de Domingo a domingo 24  horas por dia.' },
 ];
 
 const FaqItem: React.FC<{ faq: FaqItemData; isOpen: boolean; onClick: () => void }> = ({ faq, isOpen, onClick }) => {

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-// Interface para definir a estrutura de cada membro da equipe
 interface StaffMember {
   id: number;
   name: string;
@@ -14,7 +13,6 @@ const Integrantes: React.FC = () => {
   const [staff, setStaff] = useState<StaffMember[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Simula o carregamento de dados de uma API
   useEffect(() => {
     setTimeout(() => {
       setStaff([
@@ -44,10 +42,9 @@ const Integrantes: React.FC = () => {
         },
       ]);
       setIsLoading(false);
-    }, 1500); // Aumentei um pouco o tempo para que o efeito de loading seja visível
+    }, 1500);
   }, []);
 
-  // Renderiza os "skeletons" enquanto os dados estão carregando
   if (isLoading) {
     return (
         <div className="bg-slate-50 min-h-screen">
@@ -77,8 +74,6 @@ const Integrantes: React.FC = () => {
         </div>
     )
   }
-
-  // Renderiza o componente com os dados carregados
   return (
     <div className="bg-slate-50 min-h-screen">
       <div className="container mx-auto px-4 py-12">

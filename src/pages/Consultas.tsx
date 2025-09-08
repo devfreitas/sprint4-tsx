@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaStethoscope, FaHeartbeat, FaBrain, FaBone, FaBaby } from 'react-icons/fa';
+import { FaStethoscope, FaHeartbeat, FaBrain, FaBone, FaBaby} from 'react-icons/fa';
 import { type IconType } from 'react-icons';
 
 interface Specialty {
@@ -48,7 +48,7 @@ const Consultas: React.FC = () => {
             <h3 className="text-2xl font-bold text-slate-800 mb-2">{specialty.name}</h3>
             <p className="text-slate-600 flex-grow mb-6">{specialty.description}</p>
             <button className="mt-auto w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
-              Ver Disponibilidade
+              <a href="/login">Ver Disponibilidade</a>
             </button>
           </div>
         ))}
