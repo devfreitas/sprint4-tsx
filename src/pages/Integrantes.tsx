@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaCode, FaGraduationCap } from "react-icons/fa";
 interface StaffMember {
   id: number;
   name: string;
-  specialty: string;
+  class: string;
   image: string;
   linkedin: string;
   github: string;
@@ -22,7 +22,7 @@ const Integrantes: React.FC = () => {
         {
           id: 1,
           name: "João Victor Veronesi",
-          specialty: "1TDSPI",
+          class: "RM565290",
           role: "Desenvolvedor Full Stack",
           image: "/joao.jpg",
           github: "https://github.com/Veronesi30",
@@ -33,7 +33,7 @@ const Integrantes: React.FC = () => {
         {
           id: 2,
           name: "Leonardo Herrera Sabbatini",
-          specialty: "1TDSPI",
+          class: "RM562170",
           role: "Desenvolvedor Backend",
           image: "/leonardo.jpg",
           github: "https://github.com/LeoSabbatini",
@@ -43,7 +43,7 @@ const Integrantes: React.FC = () => {
         {
           id: 3,
           name: "Rafael de Freitas Moraes",
-          specialty: "1TDSPI",
+          class: "RM563210",
           role: "Desenvolvedor Frontend",
           image: "/rafael.jpg",
           github: "https://github.com/devfreitas",
